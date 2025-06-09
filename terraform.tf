@@ -24,11 +24,7 @@ terraform {
   }
 }
 
-provider "aws" {
-  region = "eu-west-2"
-  profile = "default"
-
- }
+provider "aws" {}
 
 provider "consul" {
   datacenter     = var.datacenter
