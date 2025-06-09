@@ -24,7 +24,11 @@ terraform {
   }
 }
 
-provider "aws" { }
+provider "aws" {
+  region = var.AWS_REGION
+  profile = "default"
+
+ }
 
 provider "consul" {
   datacenter     = var.datacenter
